@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+}
+body{
+    background: #fff;
+}
+header.menu.act{
+    width: 100%;
+    height: 100vh;
+}
+div.img{
+    width: 50%;
+    cursor: pointer;
+    margin-left: 25%;
+    max-height: 15vh;
+}
+div.img img.logo{
+    width: 100%;
+}
+div.btn{
+    width: 100%;
+    display: block;
+}
+div.btn a.men{
+    font-size: 5vh;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h3.ju{
+    position: absolute;
+
+}
+h3.ju::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 4px;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .3s ease;
+}
+  
+h3.ju:hover::after{
+    transform: scaleX(1);
+  }
+div.open{
+    position: fixed;
+    z-index: 20;
+    top: -7vh;
+    right: calc(100% - 9vh);
+    color: #fff;
+    height: 12vh;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 2vh solid #ffee00;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    background-color: #ffee00;
+    transition: .9s ease;
+}
+header.menu.act div.open{
+    right: 0;
+    top: 84vh;
+}
+header.menu.act::after{
+    content: "";
+    height: 8vh;
+    aspect-ratio: 1/1;
+    position: absolute;
+    background-color: #fff;
+    right: 0;
+    top: 92vh;
+
+}
+header.menu{
+    width: 0;
+    height: 0;
+    transition: .9s ease;
+    background: #ffee00;
+    display: grid;
+    position: fixed;
+    z-index: 15;
+    overflow: hidden;
+}
+img.openmenu{
+    width: 50%;
+    
+}
+section.ima{
+    width: 100%;
+    aspect-ratio: 320/209;
+    background: #d8d8d8;
+}
+img.ill{
+    width: 100%;
+}
+section.all{
+    height: auto;
+    width: 100%;
+}
+div.bas{
+    width: 100%;
+    height: 10vh;
+    background-color: #ffee00;
+    position: sticky;
+    top: 90vh;
+    display: flex;
+    align-items: center;
+}
+div.bas h2.price{
+    margin-left: 5%;
+    color: #6d6b00;
+    font-size: 5vh;
+}
+input{
+    background: #fff;
+    color: #6d6b00;
+    border: none;
+    width: 17%;
+    margin-left: 5%;
+    outline: none;
+    height: 5vh;
+    font-size: 4vh;
+    text-align: center;
+}
+div.conf{
+    width: 12%;
+    margin-left: 5%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #fff;
+    font-size: 4vh;
+    color: #6d6b00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+div.title{
+    margin-top: -10vh;
+    width: 100%;
+    height: auto;
+}
+h2.ti{
+    margin-left: 5%;
+    font-size: 3.7vh;
+}
+div.cards{
+    margin-top: 3vh;
+    height: 32vh;
+    margin-bottom: 2vh;
+}
+div.card{
+    position: absolute;
+    background: #ffee00;
+    width: 35%;
+    height: 15vh;
+    border-radius: 15px;
+    transition: .5s;
+    z-index: 2;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+}
+div.card:nth-child(1){
+    left: 10%;
+}
+div.card:nth-child(2){
+    left: 55%;
+}
+div.card:nth-child(3){
+    margin-top: 17vh;
+    left: 10%;
+}
+div.card:nth-child(4){
+    margin-top: 17vh;
+    left: 55%;
+}
+div.card.go{
+    left: 10%;
+    margin-top: 0;
+    width: 80%;
+    height: 32vh;
+    z-index: 5;
+}
+div.icon{
+    width: 100%;
+    height: 13vh;
+    font-size: 10vh;
+    margin-top: 2vh;
+    color: #6d6b00;
+}
+div.txt{
+    width: 100%;
+    height: 15vh;
+    margin-top: 2vh;
+    font-size: 3.3vh;
+    color: #6d6b00;
+
+}
+div.descr{
+    width: 100%;
+    height: auto;
+}
+p.description{
+    width: 80%;
+    margin-left: 10%;
+    color:#6d6b00;
+    font-size: 2.3vh;
+}
+div.end{
+    height: 12vh;
+}
+section.propo{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 5vh;
+}
+div.ima{
+    position: relative;
+    width: auto;
+    display: flex;
+    left: 15% ;
+    transition: 0.4s;
+}
+div.ima img.scro{
+    width: 60%;
+    background: #d8d8d8;
+    margin-left: 5%;
+    margin-right: 5%;
+    cursor: pointer;
+}
+div.btnn{
+    position: absolute;
+    background: #fff;
+    opacity: 0.5;
+    width: 15%;
+    aspect-ratio: 80/209;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vh;
+}
+div.btnn.two{
+    left: 85%;
+}
+h1.rec{
+    width: 100%;
+    font-size: 4vh;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+footer{
+    margin-top: 3vh;
+    width: 100%;
+    background: #ffee00;
+    text-align: center;
+}
+footer p{
+    color: #6d6b00;
+    font-size: 2.5vh;
+}
+footer img.logo{
+    width: 40%;
+}
