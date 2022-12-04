@@ -45,3 +45,26 @@ prev.onclick = function(){
         }
     }
 }
+
+
+
+let select2 = document.querySelector("div.imag")
+let prev2 = document.querySelector("div.btnnn.one")
+let suit2 = document.querySelector("div.btnnn.two")
+
+var adv2 = 0;
+var value2 = 0;
+suit2.onclick = function(){
+    if(adv2 < 4){
+        adv2 = adv2 + 1;
+        value2 = 27.5 - (adv2 * 45);
+        select2.style.left = value2 + "%";
+    }
+}
+prev2.onclick = function(){
+    if(adv2 > 0){
+        adv2 = adv2 - 1;
+        value2 = 27.5 - (adv2 * 45);
+        select2.style.left = value2 + "%";
+    }
+}
